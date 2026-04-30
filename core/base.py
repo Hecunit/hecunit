@@ -24,7 +24,7 @@ class HecUnit(ABC):
         self._ready = False
 
     @abstractmethod
-    async def _setup(self) -> None:
+    async def setup(self) -> None:
         """Boot connections, resolve secrets, validate config"""
 
 
